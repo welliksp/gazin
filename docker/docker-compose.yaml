@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'gazin-mysql'
+    image: 'mysql:8.1'
+    environment:
+      - 'MYSQL_DATABASE=gazin'
+      - 'MYSQL_PASSWORD=123456'
+      - 'MYSQL_ROOT_PASSWORD=123456'
+      - 'MYSQL_USER=gazin'
+    ports:
+      - '3306:3306'
